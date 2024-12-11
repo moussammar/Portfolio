@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #041024;
+    color: whitesmoke;
+}
+*{
+    box-sizing: border-box;
+}
+#name_logo{
+    font-size: 24px;
+    margin-left: 90px;
+    margin-top: 35px;
+}
+#name_logo img{
+    width: 85px;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+    font-size: 24px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a:active{
+    color:blue;
+}
+#preloader{
+    position: fixed;
+    background-image: url("book_preloader.gif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+.projects_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+#projects_title{
+    font-style: inherit;
+    font-size: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 45%;
+    background: linear-gradient(to left, rgb(23, 18, 18), whitesmoke);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 17s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 600px;
+    }
+}
+.project{
+    background-color: #413e3e;
+    width: 350px;
+    height: 410px;
+    border-radius: 20px;
+    opacity:0.65;
+}
+.project img{
+    margin-top: 35px;
+    margin-left: 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1.5px solid black;
+    opacity: 1.8;
+}
+.project p{
+    color: whitesmoke;
+    font-style: inherit;
+    text-align: center;
+    font-size: 24px;
+}
+.project:hover{
+    transform: translateY(-30px);
+    transition: all 0.65s;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <p id="name_logo"><img src="logo.png"></p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">projects</a>
+            <a href="my_info.html">My Info</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center; margin-bottom: 40px;">Get in Touch!</h1>
+        <p id="contact_p">Feel free to reach out. You can contact me through the form
+            below or via email (moussa3ammar@gmail.com), and I'll get back to you as soon as possible.
+        </p>
+        <div class="contact_container">
+
+            <form action="https://formspree.io/f/mbljeyrd" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Your Message"
+                    required></textarea><br><br>
+                <div class="align_button">
+                    <button id="send_button" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact_wrapper">
+            <a
+                href="https://www.linkedin.com/in/moussa-ammar-8a157a318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img
+                    src="linkedin.png">LinkedIn</a>
+            <a href="https://www.instagram.com/moussa_3ammar?igsh=dnptdWxoZjB1a3F2" target="_blank"><img src="insta_logo.png">Instagram</a>
+            <a href="https://www.facebook.com/moussa.ammar.5249?mibextid=ZbWKwL" target="_blank"><img src="facebook.png">Facebook</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

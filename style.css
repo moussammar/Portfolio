@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #041024;
+    color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#name_logo {
+    font-size: 24px;
+    margin-left: 90px;
+    margin-top: 35px;
+}
+
+#name_logo img {
+    width: 85px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: blue;
+}
+
+#preloader {
+    position: fixed;
+    background-image: url("book_preloader.gif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+@keyframes backInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#name_animation {
+    animation: backInLeft 1s ease-out;
+    position: relative;
+}
+
+#service_animation {
+    animation: backInLeft 2s ease-out;
+    position: relative;
+}
+
+@keyframes backInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0
+    }
+
+    60% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.backin_right {
+    animation: backInRight 1.5s ease-out;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_in {
+    animation: fadeIn 1.3s ease-in-out;
+}
+
+#title_define {
+    font-style: inherit;
+    font-size: 32px;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 30%;
+    background: linear-gradient(to left, rgb(23, 18, 18), whitesmoke);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 17s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 600px;
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#my_img {
+    margin-right: 50px;
+    border-radius: 5px;
+}

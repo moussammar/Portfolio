@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #041024;
+    color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#name_logo {
+    font-size: 24px;
+    margin-left: 90px;
+    margin-top: 35px;
+}
+
+#name_logo img {
+    width: 85px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: blue;
+}
+
+#preloader {
+    position: fixed;
+    background-image: url("book_preloader.gif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+
+#contact_p {
+    text-align: center;
+    font-style: inherit;
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.align_button{
+    display: flex;
+    justify-content: center;
+}
+#send_button{
+    color:whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 28px;
+    border: none;
+    border-radius: 20px;
+    background-color: #13346d;
+    opacity: 0.6;
+}
+#name{
+    background-color: #13346d;
+    color: whitesmoke;
+    font-size: 28px;
+    border: none;
+    border-radius: 10px;
+    margin:10px;
+    opacity: 0.6;
+    height: 50px;
+    width: 450px;
+    padding: 20px;
+}
+#email{
+    background-color: #13346d;
+    color: whitesmoke;
+    font-size: 28px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: 0.6;
+    height: 50px;
+    width: 450px;
+    padding: 20px;
+}
+#message{
+    background-color: #13346d;
+    color: whitesmoke;
+    font-size: 28px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: 0.6;
+    height: 300px;
+    width: 920px;
+    padding: 20px;
+}
+.contact_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contact_wrapper a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.contact_wrapper a:hover{
+    text-decoration: underline;
+}
+.contact_wrapper img{
+    width: 100px;
+    height: 100px;
+    transform: translateY(35px);
+}
